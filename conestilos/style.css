@@ -1,0 +1,32 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.menu{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    text-shadow: 1px 1px hsl(114, 92%, 31%);
+    font-size: 30px;
+}
+
+.iconos{
+    font-size: 30px;
+}
+
