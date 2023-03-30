@@ -17,16 +17,159 @@ body {
 .menu{
     padding: 10px;
     font-weight: bold;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
 }
 
 .texto{
     font-family: Arial, Helvetica, sans-serif;
-    color: green;
-    text-shadow: 1px 1px hsl(114, 92%, 31%);
+    font-weight: bold;
+    color:green;
+    text-shadow: 1px 2px #01DFA5;
     font-size: 30px;
+    padding-right: 75%;
+    padding-left: 1%;
 }
 
 .iconos{
     font-size: 30px;
+}
+
+.segsecc{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 3%;
+    
+}
+
+#titulos{
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    width: 100%;
+    padding: 2%;
+    margin: 1%;
+}
+.imagen{
+    margin-left:  10%;
+    padding-bottom: 1%;
+    width: 90%;
+    
+}
+
+#textop{
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.boton{
+    padding: 1.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#01DFA5;
+    background-color: transparent;
+
+}
+
+
+
+.printitulo{
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:green;
+    font-size: 1.2em;
+    border-top: 2px solid black;
+    margin-left: 70px;
+    padding: 20px;
+    margin:0 auto;
+}
+
+.principal{
+     display: -moz-grid;
+     display:grid;
+     grid-template-rows: 1px 100px ;
+     grid-template-columns: 0.5px 1fr  0.5px 1fr;
+     grid-gap: 120px;
+     margin-bottom: 50px;
+
+}
+.principal > section{
+  width: 95%;
+  padding: 40px;
+}
+
+.principal > section >i{
+    font-size: 50px;
+    color: green;
+    margin-left: 10px;
+    text-align: right;
+   
+}
+
+.principal > section >h4{
+    font-size: 1.5em;
+    color: green;
+}
+
+.principal > section > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.acerca{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 200px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    width: 95%;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    margin-top: 150px;
+}
+.acerca > section > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    padding: 50px;
+}
+
+.acerca > section > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: green;
+    font-weight: bold;
+}
+.formularios{
+    display: grid;
+    grid-template-rows: 250px 250px 200px;
+    grid-template-columns: 400px 500px;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    border-top: 2px solid black;
+}
+.formularios h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: green;
+    font-weight: bold;
+    padding: 40px;
+}
+.formularios > section > form > p > input{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 400px;
+    align-items: center;
 }
 
