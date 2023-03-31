@@ -151,8 +151,8 @@ body {
 }
 .formularios{
     display: grid;
-    grid-template-rows: 250px 250px 200px;
-    grid-template-columns: 400px 500px;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 400px 700px;
     gap: 20px;
     justify-content: start;
     align-items: start;
@@ -160,7 +160,7 @@ body {
 }
 .formularios h2{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: start;
     font-size: 1.5em;
     color: green;
     font-weight: bold;
@@ -171,5 +171,40 @@ body {
     margin-bottom: 20px;
     width: 400px;
     align-items: center;
+}
+.motivo {
+    margin-left: 200px;
+
+}
+
+.motivo i{
+    font-size: 20px;
+    color: green;
+}
+
+.motivo p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 13px;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.enviar input{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:yellowgreen;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.informa{
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-rows: 250px;
+    grid-template-columns: 400px 400px 400px 400px;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
 }
 
