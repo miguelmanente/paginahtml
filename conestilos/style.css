@@ -1,3 +1,4 @@
+/* configuración de estilos generales */
 * { 
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
     margin: 0 auto;
 }
 
+/* Estilos del header de la página con Navbar */
 .menu{
     padding: 10px;
     font-weight: bold;
@@ -22,7 +24,7 @@ body {
     border-bottom: 2px solid black;
 }
 
-.texto{
+.menu span{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color:green;
@@ -36,49 +38,52 @@ body {
     font-size: 30px;
 }
 
+/* Estilos de sección de contenido textual */
 .segsecc{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content:space-around;
+    display:grid;
+    grid-template-rows: 400px ;
+    grid-template-columns: 1fr 2fr;
     width: 95%;
     margin: 0 auto;
     padding-left: 3%;
-    
 }
 
-#titulos{
+.segsecc h2 {
     color:green;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
     width: 100%;
-    padding: 2%;
+    padding-bottom: 2%;
     margin: 1%;
 }
-.imagen{
-    margin-left:  10%;
-    padding-bottom: 1%;
-    width: 90%;
-    
-}
-
-#textop{
-    padding-top: 1%;
-    padding-right: 1%;
-    padding-bottom: 5%;
-    width: 100%;
+.segsecc h4{
+    color:green;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+.segsecc p{
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.segsecc img{
+    padding: 10px;
 }
 .boton{
     padding: 1.5%;
     font-family: Arial, Helvetica, sans-serif;
     color:#01DFA5;
     background-color: transparent;
-
 }
 
-
-
+/* Estilos del titulo principal correspondiente al área main  */
 .printitulo{
     width: 95%;
     font-family: Arial, Helvetica, sans-serif;
@@ -91,6 +96,7 @@ body {
     margin:0 auto;
 }
 
+/* Estilos de área MAIN */
 .principal{
      display: -moz-grid;
      display:grid;
@@ -123,6 +129,7 @@ body {
     text-align: justify;
 }
 
+/* Estilos de correspondientes Acerca de nosotros */
 .acerca{
     display: grid;
     grid-template-rows: 300px;
@@ -149,6 +156,8 @@ body {
     color: green;
     font-weight: bold;
 }
+
+/* Estilos correspondientes a el formulario de contacto */
 .formularios{
     display: grid;
     grid-template-rows: 250px 250px;
@@ -198,6 +207,7 @@ body {
     border-radius: 8px;
 }
 
+/* Estilos correspondiente a información y servicio */
 .informa{
     display: grid;
     grid-template-rows: 300px;
@@ -225,6 +235,7 @@ body {
     color: green;
 }
 
+/* Estilos del área como contactarme */
 .contacto {
     text-align: center;
     margin-top:  100px;
