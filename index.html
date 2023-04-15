@@ -7,32 +7,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Trabajo HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Sección encabezado con un navbar -->
-    <section>
-        <header>
-            <nav>
-                <a href="#"> <i class="fa-solid fa-bars"></i></a>
-                <span>MEGA ROCKET SA</span>
-                <a href="#"> <i class="fa-sharp fa-solid fa-house"></i></a>
-                <a href="#"> <i class="fa-solid fa-user-clock"></i></a>
-                <a href="#"> <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-                <a href="#"> <i class="fa-solid fa-circle-info"></i></a>
-                <hr>
-            </nav>
-        </header>
-    </section>
+        <!-- -----------------------------------(Sección 1)--------------------------------- -->
+        <!-- Sección encabezado con un navbar   -->
+        <section class="menu">
+            <header>
+                <nav>
+                    <a href="#" class="iconos"> <i class="fa-solid fa-bars"></i></a>
+                    <span>MEGA ROCKET SA</span>
+                    <a href="#" class="iconos"> <i class="fa-sharp fa-solid fa-house"></i></a>
+                    <a href="#" class="iconos"> <i class="fa-solid fa-user-clock"></i></a>
+                    <a href="#" class="iconos"> <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <a href="#"class="iconos"> <i class="fa-solid fa-circle-info"></i></a>
+                </nav>
+            </header>
+        </section>
 
-    <!-- Sección articulos y imágenes -->
-    <section>
-        <article>
+        <!-- ----------------------------------(Sección 2)--------------------------------- -->
+    <!-- Sección articulos y imágenes  -->
+    <section class="contenedor">
+        <article class="box1">
             <header>
                 <h2>Hi, I'm Mega Rocket Gym</h2>
                 <h4>A FREE AND FULLY RESPONSIVE SITE TEMPLATE</h4>
             </header>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias molestias ipsa saepe, deleniti ea illum
+       
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias molestias ipsa saepe, deleniti ea illum
             nobis officia nam totam nulla soluta consequuntur eum dolorem veritatis porro dolorum modi assumenda ipsam
             quam! Culpa aliquam ratione magnam blanditiis beatae officia asperiores aspernatur alias nam optio. Perspiciatis,
             tempore aliquam. Voluptates eveniet sunt velit saepe mollitia illo reprehenderit animi eos sint, eaque tempora esse
@@ -40,81 +42,94 @@
             eveniet beatae at nemo eaque possimus quod fugit voluptatum, temporibus iusto fuga laboriosam eligendi assumenda vitae
             suscipit! Aut, tempore officiis est aliquam ipsam ea omnis!
             </p>
-            <input type="BUTTON" value="LEARN MORE">
+            <input type="BUTTON" value="LEARN MORE" class="boton">
         </article>
 
         <!-- Imagen a la derecha del texto -->
-        <article>
+        <article class="box2">
             <figure>
-                <br>
-                <img src="imagen.jpg" alt="descripción de imagen" width="400" height="228">
-                <hr>
+                <img src="Gym Portada.jpg" alt="gymImg" class="imgGym">
             </figure>
         </article>
     </section>
 
-    <!-- Información principal de la página -->
-    <main>
-        <section>
+    <!-- ---------------------------------(Sección 3)----------------------------------- -->
+    <!-- Información principal de la página  -->
+    
+    <main class="container">
+        <section class="titulo">
             <header>
                 <h2>Funciones en la App</h2>
             </header>
-            <article>
-                <i class="fa-regular fa-calendar-check"></i>
-                <h4>Reserva de turnos</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic pariatur reprehenderit eligendi aspernatur
-                   facere non, ea mollitia excepturi molestiae sed! Fugit quas provident ducimus rem cupiditate nesciunt doloribus animi.
-                </p>
-            </article>
         </section>
+        
+        <article class="bloques">
+            <i class="fa-regular fa-calendar-check"></i>
+        </article>
+            
+        <article class="textoBloque" >
+            <h4>Reserva de turnos</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic pariatur reprehenderit eligendi aspernatur
+                 facere non, ea mollitia excepturi molestiae sed! Fugit quas provident ducimus rem cupiditate nesciunt doloribus animi.
+            </p>
+        </article>
+    
+        <article class="bloques">
+            <i class="fa-sharp fa-solid fa-calendar-days"></i>
+        </article>
 
-        <section>
-            <article>
-                <i class="fa-solid fa-file"></i>
-                <h4>Gestión de Membresias</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sequi adipisci possimus ratione fugiat magnam vero
-                   recusandae autem soluta beatae dignissimos officiis molestias voluptatibus error repellendus architecto harum, totam sunt?
-                </p>
-            </article>
-        </section>
+        <article class="textoBloque">
+            <h4>Visualización de agenda y horarios</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error mollitia distinctio, minima accusamus tempore doloribus
+                inventore eius a soluta veritatis recusandae asperiores quos laborum, eum pariatur? Omnis perspiciatis accusamus animi?
+            </p>
+        </article>
 
-        <section>
-            <article>
-                <i class="fa-sharp fa-solid fa-calendar-days"></i>
-                <h4>Visualización de agenda y horarios</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error mollitia distinctio, minima accusamus tempore doloribus
-                   inventore eius a soluta veritatis recusandae asperiores quos laborum, eum pariatur? Omnis perspiciatis accusamus animi?
-                </p>
-            </article>
-        </section>
+        <article class="bloques">
+            <i class="fa-solid fa-file"></i>
+        </article>
 
-        <section>
-            <article>
-                <i class="fa-solid fa-message"></i>
-                <h4>Formulario de contacto y sugerencias</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo hic qui unde illum nostrum ipsum iure repellat ut.
-                   Consequuntur, nostrum porro tempore reiciendis qui provident quia quae repudiandae mollitia!
-                </p>
-                <hr>
-            </article>
-        </section>
+        <article class="textoBloque">
+            <h4>Gestión de Membresias</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sequi adipisci possimus ratione fugiat magnam vero
+                recusandae autem soluta beatae dignissimos officiis molestias voluptatibus error repellendus architecto harum, totam sunt?
+            </p>
+        </article>
+
+        <article class="bloques">
+             <i class="fa-solid fa-message"></i>
+        </article>
+   
+        <article class="textoBloque">
+            <h4>Formulario de contacto y sugerencias</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo hic qui unde illum nostrum ipsum iure repellat ut.
+                Consequuntur, nostrum porro tempore reiciendis qui provident quia quae repudiandae mollitia!
+            </p>
+        </article>
     </main>
 
-    <!-- Sección acerca de nosotros -->
-    <section>
-        <article>
+    <!-- -------------------------------(Sección 4)----------------------------------------- -->
+    <!-- Sección acerca de nosotros  -->
+    <section class="contenedorAcerca">
+        <article class="acercaNos">
             <h2>Acerca de nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque autem, possimus exercitationem nam voluptas perferendis 
-               adipisci voluptatem hic saepe tempore! Harum iste culpa error vero reprehenderit odio dignissimos excepturi molestias accusamus 
-               voluptates sequi, sapiente eum at labore veniam, hic amet saepe! Adipisci, ut rem. Obcaecati corrupti harum quo possimus!
+        </article>
+        <article class="acercaTex">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus   
+                voluptatum blanditiis pariatur consequuntur accusantium laborum quia distinctio   
+                itaque cupiditate officiis veritatis fuga corrupti saepe, provident quos debitis 
+                 ad optio porro error fugiat qui beatae esse nam? Nobis unde mollitia perferendis 
+                   quis inventore, sit dolores rem delectus a illo quisquam itaque voluptates 
+                    porro reiciendis architecto perspiciatis modi ipsam consectetur laudantium facere eveniet dolor quas? Autem atque odit beatae quidem, ipsa maxime, eveniet aperiam doloremque iste porro unde tempora pariatur obcaecati consectetur quos sit optio? Ipsam quos debitis rerum quam, rem sapiente? Id quos voluptate labore impedit eaque fugiat iusto aspernatur.
             </p>
-            <hr>
         </article>
     </section>
 
+    <!-- ---------------------------------(Sección 5)---------------------------------------- -->
     <!-- Sección Formulario de contactos -->
-    <section>
-        <article>
+    <section class="contenedorForm">
+        <article class="datosPer">   
             <header>
                 <h2>Dejanos tu consulta</h2>
             </header>
@@ -128,29 +143,33 @@
                 <p>
                     <input type="email" value="Email"/>
                 </p>
-
-                <section>
-                    <article>
-                        <header>
-                            <h2>Motivo</h2>
-                            <i class="bi bi-calendar2-check-fill"></i>
-                            <span>Quiero conocer las membresías y costos</span>
-                            <p><i class="bi bi-calendar2-check-fill"></i>
-                               <span>Quiero realizar una consulta o sugerencia</span>
-                            </p>
-                            <p>
-                                <i class="bi bi-calendar2-check-fill"></i>
-                                <span>Quiero realizar un reclamo</span>
-                            </p>
-                        </header>
-                    </article>
-                </section>
-                <p>
-                    <textarea  rows="10" cols="200">Comentarios</textarea>
-                </p>
-                <input type="BUTTON" value="Send">
-                <hr>
             </form>
+        </article>
+        <article class="motivos">
+            <article>
+                <h2>Motivo del contacto</h2>
+            </article>
+            <article>
+                <p>
+                    <i class="bi bi-calendar2-check-fill"></i>
+                    <span>Quiero conocer las membresías y costos</span>
+                </p>
+                <p>
+                    <i class="bi bi-calendar2-check-fill"></i>
+                    <span>Quiero realizar una consulta o sugerencia</span>
+                </p>
+                <p>
+                    <i class="bi bi-calendar2-check-fill"></i>
+                    <span>Quiero realizar un reclamo</span>
+                </p>
+            </article>
+        </article>
+
+        <article class="comentarios">
+            <form>
+                <textarea rows="15" cols="150">Comentarios</textarea>
+                <input class="bSend" type="BUTTON" value="Send" >
+            </form >
         </article>
     </section>
 

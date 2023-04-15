@@ -1,0 +1,371 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 95%;
+    margin: 0 auto;
+}
+/* -----------------------------Sección1--------------------------------------------- */
+/* Estilos del header de la página con Navbar   */
+.menu{
+    padding: 5px;
+    font-weight: bold;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+}
+
+.menu span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:green;
+    text-shadow: 1px 2px #01DFA5;
+    font-size: 30px;
+    padding-right: 56%;
+    padding-left: 1px;
+}
+
+.iconos{
+    font-size: 30px;
+    color:black;
+}
+
+/* ---------------------------Sección2-------------------------------------------- */
+/* Sección  */
+.contenedor{
+    width: 95%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3%;
+    border-bottom: 2px solid black;
+}
+.box1{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;  
+}
+.box1 h2{
+    font-size: 2em;
+    color: green;
+    margin:1% 1% 3% 1%;
+}
+.box1 h4{
+    font-size: 1.7em;
+    color: green;
+    margin:1% 1% 3% 1%;
+}
+.box2{
+    width: 45%;
+}
+
+.imgGym{
+    width: 100%;
+    height: 100%;
+}
+.boton{
+    padding:2% 2% 2% 2%;
+    margin:5% 1% 1% 1%;
+    font-weight: bold;
+}
+
+/* -------------------------------Sección 3---------------------------------------- */
+/* seccion container - main */
+.container{
+    width: 95%;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1%;
+    padding: 2%;
+    border-bottom: 2px solid black;
+
+}
+.titulo{
+    width: 100%;
+    font-size: 1.5em;
+    color:green;
+}
+i{
+    width: 5%;
+}
+
+.bloques{
+    width: 4%;
+    font-size: 3em;
+    color:green;
+    padding: 3%;
+   
+}
+.textoBloque{
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color:green;
+    margin-left: 5px;
+    padding: 2%;
+}
+
+.textoBloque h4{
+    font-weight: bold;
+    padding: 1%;
+}
+
+/* -----------------------------------Sección 4--------------------------------- */
+.contenedorAcerca{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    border-bottom: 2px solid black;
+}
+
+.acercaNos{
+    width: 20%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color:green;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.acercaTex{
+    width: 80%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 5%;
+}
+
+/* -----------------------------------Sección 5--------------------------------- */
+.contenedorForm{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: start;
+    gap:5%;
+    border-bottom: 2px solid black;
+}
+
+.datosPer{
+    width: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:green;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.datosPer h2{
+    padding: 5px;
+    text-align: center;
+}
+.motivos{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:green;
+    font-size: 1em;
+    
+}
+
+.motivos h2{
+    padding: 15px;
+    text-align: center;
+}
+.motivos i{
+    width: 10%;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+p{
+    width: 90%;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom:10px ;
+}
+
+.comentarios {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.comentarios textarea{
+    width: 100%;
+    height: 100%;
+}
+.comentarios .bSend{
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: chartreuse;
+}
+
+/* -----------------------------------Sección 6--------------------------------- */
+
+
+
+
+/* -----------------------------------Sección MEDIA QUERIES--------------------------------- */
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+    body{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .menu,.menu span, .iconos,.box1,.box2,.container,.titulo,.bloques,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input {
+        width: 95%;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+    .contenedor{
+        flex-direction: column;
+        flex-wrap: wrap;
+    } 
+
+    .titulo{
+        width: 80%;
+        font-size: 1.5em;
+        color:green;
+        text-align: center;
+    }
+    i{
+        width: 5%;
+        margin-left: 120px;
+    }
+    .bloques{
+        width: 22%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: center;
+        font-size: 4em;
+        color:green;
+    }
+    .textoBloque{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: start;
+        width: 65%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color:green;
+
+    }
+    
+    .textoBloque h4{
+        font-weight: bold;
+       
+    }
+     .contenedorAcerca{
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+    .datosPer{
+        width: 100%;
+        order: 0;
+    }
+    .motivos{
+        width: 100%;
+        order:2;
+    }
+    .comentarios{
+        width: 10%;
+        height: 100%;
+        order:1;
+    }
+    .comentarios {
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .comentarios .bSend{
+        width: 30%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: chartreuse;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .menu,.menu span, .iconos,.box1,.box2,.titulo,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input  {
+        width: 95%;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+    .contenedor{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 95%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    .titulo{
+        text-align: center;
+    }
+    .bloques{
+        width: 30%;
+    }
+    .textoBloque{
+        width: 100%;
+        font-size: 01em;
+    }
+    .contenedorAcerca{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contenedorForm{
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .datosPer{
+        width: 100%;
+        order: 0;
+    }
+    .motivos{
+        width: 100%;
+        order:2;
+    }
+    .comentarios{
+        width:100%;
+        order:1;
+    }
+}
