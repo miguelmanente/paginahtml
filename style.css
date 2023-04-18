@@ -66,8 +66,9 @@ body{
     height: 100%;
 }
 .boton{
+    width: 10%;
     padding:2% 2% 2% 2%;
-    margin:5% 1% 1% 1%;
+    margin:50% 1% 1% 10%;
     font-weight: bold;
 }
 
@@ -75,16 +76,14 @@ body{
 /* seccion container - main */
 .container{
     width: 95%;
-    height: 100%;
     margin:0 auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: start;
     gap: 1%;
     padding: 2%;
     border-bottom: 2px solid black;
-
 }
 .titulo{
     width: 100%;
@@ -92,18 +91,18 @@ body{
     color:green;
 }
 i{
-    width: 5%;
+    width: 20px;
 }
 
 .bloques{
-    width: 4%;
+    width: 40px;
     font-size: 3em;
     color:green;
     padding: 3%;
-   
 }
+
 .textoBloque{
-    width: 40%;
+    width: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color:green;
@@ -262,15 +261,62 @@ article p{
 
 /* -----------------------------------Sección MEDIA QUERIES--------------------------------- */
 @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-    .menu,.menu span, .iconos,.box1,.box2,.container,.titulo,.bloques,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input,.contenedorInforma{
-  
+    .menu,.menu span, .iconos,.box1,.box2,.titulo,.bloques,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input,.contenedorInforma{
         width: 95%;
         margin: 0 auto;
+    }
+    .container{
+        width: 95%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    .boton{
+        width: 100px;
+        padding:2% 2% 2% 2%;
+        margin:5% 1% 5% 1%;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .titulo{
+        width: 1930px;
+        font-size: 1em;
+        color:green;
+        text-align: center;
+    }
+    i{
+        width: 10px;
+        margin-left: 12px;
+    }
+    .bloques{
+        width:50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: start;
+        font-size: 4em;
+        color:green;
+    }
+    .textoBloque{
+        width: 650px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color:green;
+
+    }
+    
+    .textoBloque h4{
+        font-weight: bold;
+       
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .menu,.menu span, .iconos,.box1,.box2,.container,.titulo,.bloques,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input {
+    .menu,.menu span, .iconos,.box1,.box2,.boton,.container,.titulo,.bloques,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input {
         width: 95%;
         font-size: 1em;
         margin: 0 auto;
@@ -279,22 +325,34 @@ article p{
         flex-direction: column;
         flex-wrap: wrap;
     } 
-
+    .container{
+        width: 95%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    .boton{
+        width: 100px;
+        padding:2% 2% 2% 2%;
+        margin:5% 1% 5% 1%;
+        font-weight: bold;
+        font-size: 10px;
+    }
     .titulo{
         width: 80%;
-        font-size: 1.5em;
+        font-size: 1em;
         color:green;
         text-align: center;
     }
     i{
         width: 5%;
-        margin-left: 120px;
+        margin-left: 12px;
     }
     .bloques{
         width: 22%;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         text-align: center;
         font-size: 4em;
         color:green;
@@ -351,7 +409,7 @@ article p{
 }
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
-    .menu,.menu span, .iconos,.box1,.box2,.titulo,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input  {
+    .menu,.menu span, .iconos,.box1,.box2,.container,.titulo,.textoBloque,.acercaNos,.acercaTex,.contenedorForm,input  {
         width: 95%;
         font-size: 1em;
         margin: 0 auto;
@@ -366,6 +424,13 @@ article p{
         flex-wrap: wrap;
         align-items:center;
     }
+    .boton{
+        width: 100px;
+        padding:2% 2% 2% 2%;
+        margin:5% 1% 5% 1%;
+        font-weight: bold;
+        font-size: 10px;
+    }
     .titulo{
         text-align: center;
     }
@@ -374,7 +439,7 @@ article p{
     }
     .textoBloque{
         width: 100%;
-        font-size: 01em;
+        font-size: 1em;
     }
     .contenedorAcerca{
         flex-direction: column;
